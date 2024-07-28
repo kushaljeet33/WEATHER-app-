@@ -1,0 +1,108 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #76c7c0, #4a90e2); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff; /* White background for the card */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for card effect */
+    width: 100%;
+    max-width: 400px; /* Max width for responsiveness */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.weather-info {
+    margin-bottom: 20px;
+}
+
+#location {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    width: 70%;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+#weatherButton {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #4a90e2; /* Blue button */
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#weatherButton:hover {
+    background: #357ABD; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+.weather-details {
+    font-size: 1.2rem;
+}
+
+.weather-details p {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.weather-details #city {
+    font-size: 1.5rem;
+    color: #4a90e2; /* Blue color for city */
+}
+
+.weather-details #temperature {
+    font-size: 2rem;
+    color: #e94e77; /* Warm pink for temperature */
+}
+
+.weather-details #description {
+    font-size: 1.2rem;
+    color: #888; /* Light grey for description */
+}
+
+.weather-icon {
+    margin: 20px 0;
+}
+
+.weather-icon img {
+    width: 100px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    #location {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #weatherButton {
+        width: 100%;
+    }
+}
